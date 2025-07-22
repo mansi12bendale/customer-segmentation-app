@@ -1,68 +1,60 @@
-# 🧠 Customer Segmentation Web App
+# 🧠 Customer Segmentation App
 
-🚀 **Live App:** [Click here to try the Customer Segmentation App](https://customer-segmentation-app-297fkmgxxxh3wu4keggphm.streamlit.app/)
+This project performs customer segmentation using **KMeans Clustering** on the popular [Mall_Customers.csv](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python) dataset.
 
----
+The web app is built using **Streamlit**, and allows users to input customer details and predict their segment.
 
-## 📌 Project Overview
-
-This project is a **Customer Segmentation Web App** built using **Streamlit** and powered by **KMeans Clustering**.
-
-It helps businesses:
-- Understand their customer base.
-- Group customers into meaningful segments based on behavior.
-- Make smarter, targeted marketing decisions.
+🔗 **Live App**  
+👉 [Click here to try the app on Streamlit Cloud](https://customer-segmentation-app-297fkmgxxxh3wu4keggphm.streamlit.app/)
 
 ---
 
-## 🛠️ Features
+## 🚀 Features
 
-- 🧍 Gender, Age, Income, and Spending Score input
-- 🔍 Real-time segment prediction using a trained KMeans model
-- 📊 Display of full customer dataset with assigned clusters
-- 💡 Descriptive tags for each customer segment
-- 🌐 Deployed on Streamlit Cloud
+- 🎯 Predict customer segment using KMeans model  
+- 🧍 Input form for customer demographics (Gender, Age, Income, Spending Score)  
+- ✅ Displays predicted segment with description  
+- 📊 Option to view full clustered dataset  
+- ⚙️ Built with Streamlit for interactive UI
 
 ---
 
-## 📂 Files in This Repo
+## 📁 Project Structure
 
-| File | Description |
-|------|-------------|
-| `app.py` | Streamlit frontend code |
+| File / Folder | Description |
+|---------------|-------------|
+| `app.py` | Main Streamlit app |
 | `train_model.py` | Script to train and save the clustering model |
-| `model.pkl` | Trained KMeans model |
-| `scaler.pkl` | Feature scaler for preprocessing input |
-| `customer_segments.csv` | Output with cluster labels |
+| `model.pkl` | Saved KMeans model |
+| `scaler.pkl` | Saved StandardScaler object |
 | `Mall_Customers.csv` | Original dataset |
+| `customer_segments.csv` | Data with predicted cluster labels |
+| `EDA_Customer_Segmentation.ipynb` | 📝 Full EDA notebook |
 | `requirements.txt` | Required Python packages |
-| `.streamlit/` | Streamlit configuration files |
-| `README.md` | This file |
+| `.streamlit/` | Streamlit config folder |
+| `README.md` | This documentation file |
 
 ---
 
-## 📊 Dataset
+## 🔍 Exploratory Data Analysis (EDA)
 
-- **Source:** [Kaggle - Mall Customer Segmentation](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python)
-- **Features:**
-  - Gender
-  - Age
-  - Annual Income (k$)
-  - Spending Score (1–100)
+A complete **EDA notebook** is included in this repository to explore:
+
+- Age, Income & Spending Score distributions  
+- Customer demographics  
+- Correlation between variables  
+- Optimal number of clusters using Elbow method  
+- Visualization of clusters (2D and 3D)
+
+📓 [View the EDA notebook](./EDA_Customer_Segmentation.ipynb)
 
 ---
 
-## 🚀 Run Locally
+## 📦 Installation
 
+### Run locally:
+
+1. Clone the repository:
 ```bash
-# Clone the repo
 git clone https://github.com/mansi12bendale/customer-segmentation-app.git
-
-# Navigate to project folder
 cd customer-segmentation-app
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the app
-streamlit run app.py
