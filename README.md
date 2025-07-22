@@ -1,60 +1,78 @@
 # 🧠 Customer Segmentation App
 
-This project performs customer segmentation using **KMeans Clustering** on the popular [Mall_Customers.csv](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python) dataset.
+This is a simple Streamlit web application that performs **Customer Segmentation** using **KMeans Clustering**.  
+It groups customers based on their gender, age, income, and spending behavior.
 
-The web app is built using **Streamlit**, and allows users to input customer details and predict their segment.
-
-🔗 **Live App**  
-👉 [Click here to try the app on Streamlit Cloud](https://customer-segmentation-app-297fkmgxxxh3wu4keggphm.streamlit.app/)
-
----
-
-## 🚀 Features
-
-- 🎯 Predict customer segment using KMeans model  
-- 🧍 Input form for customer demographics (Gender, Age, Income, Spending Score)  
-- ✅ Displays predicted segment with description  
-- 📊 Option to view full clustered dataset  
-- ⚙️ Built with Streamlit for interactive UI
+👉 **Live Demo**: [Open Streamlit App](https://customer-segmentation-app-297fkmgxxxh3wu4keggphm.streamlit.app/)
 
 ---
 
 ## 📁 Project Structure
 
-| File / Folder | Description |
-|---------------|-------------|
-| `app.py` | Main Streamlit app |
-| `train_model.py` | Script to train and save the clustering model |
-| `model.pkl` | Saved KMeans model |
-| `scaler.pkl` | Saved StandardScaler object |
-| `Mall_Customers.csv` | Original dataset |
-| `customer_segments.csv` | Data with predicted cluster labels |
-| `EDA_Customer_Segmentation.ipynb` | 📝 Full EDA notebook |
-| `requirements.txt` | Required Python packages |
-| `.streamlit/` | Streamlit config folder |
-| `README.md` | This documentation file |
+📦 customer-segmentation-app
+├── app.py # Streamlit application
+├── train_model.py # Script to train KMeans model
+├── Mall_Customers.csv # Raw dataset
+├── customer_segments.csv # Dataset with cluster labels
+├── model.pkl # Trained KMeans model
+├── scaler.pkl # Trained StandardScaler
+├── requirements.txt # Dependencies
+├── EDA_Customer_Segmentation.ipynb # Exploratory Data Analysis notebook
+└── README.md # Project documentation
+
+yaml
+Copy
+Edit
 
 ---
 
-## 🔍 Exploratory Data Analysis (EDA)
+## 📊 Dataset
 
-A complete **EDA notebook** is included in this repository to explore:
-
-- Age, Income & Spending Score distributions  
-- Customer demographics  
-- Correlation between variables  
-- Optimal number of clusters using Elbow method  
-- Visualization of clusters (2D and 3D)
-
-📓 [View the EDA notebook](./EDA_Customer_Segmentation.ipynb)
+- Dataset: [Mall_Customers.csv](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python)
+- Features:
+  - `Gender`
+  - `Age`
+  - `Annual Income (k$)`
+  - `Spending Score (1-100)`
 
 ---
 
-## 📦 Installation
+## 🚀 Features
 
-### Run locally:
+- Input customer info and predict their segment using KMeans
+- Segments customers into 5 clusters
+- Displays full dataset with cluster labels
+- Helpful visual insights available via EDA notebook
 
-1. Clone the repository:
-```bash
-git clone https://github.com/mansi12bendale/customer-segmentation-app.git
-cd customer-segmentation-app
+---
+
+## 📈 Exploratory Data Analysis (EDA)
+
+A detailed EDA has been performed and is available in the notebook:
+
+📓 [`EDA_Customer_Segmentation.ipynb`](EDA_Customer_Segmentation.ipynb)
+
+---
+
+## ▶️ Run Locally
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/mansi12bendale/customer-segmentation-app.git
+   cd customer-segmentation-app
+Install required dependencies
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Launch the Streamlit app
+
+bash
+Copy
+Edit
+streamlit run app.py
+🙋‍♀️ Developed By
+Mansi Bendale
+🎯 Internship Project | July 2025
+
