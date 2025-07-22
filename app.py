@@ -1,3 +1,24 @@
+import os
+import streamlit as st
+
+st.write("🔍 Files in current directory:", os.listdir())
+
+# Then attempt to load model/scaler
+import pickle
+
+if not os.path.exists("model.pkl"):
+    st.error("❌ model.pkl not found in the directory")
+else:
+    with open("model.pkl", "rb") as f:
+        model = pickle.load(f)
+        st.success("✅ model.pkl loaded successfully")
+
+if not os.path.exists("scaler.pkl"):
+    st.error("❌ scaler.pkl not found in the directory")
+else:
+    with open("scaler.pkl", "rb") as f:
+        scaler = pickle.load(f)
+        st.success("✅ scaler.pkl loaded successfully")
 import streamlit as st
 import pandas as pd
 import numpy as np
