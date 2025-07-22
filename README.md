@@ -1,7 +1,6 @@
-
 # 🧠 Customer Segmentation Web App
 
-🚀 **Live App:** [Click here to try the Customer Segmentation App]([https://your-streamlit-link.streamlit.app](https://customer-segmentation-app-297fkmgxxxh3wu4keggphm.streamlit.app/))
+🚀 **Live App:** [Click here to try the Customer Segmentation App](https://customer-segmentation-app-297fkmgxxxh3wu4keggphm.streamlit.app/)
 
 ---
 
@@ -57,7 +56,7 @@ It helps businesses:
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/customer-segmentation-app.git
+git clone https://github.com/mansi12bendale/customer-segmentation-app.git
 
 # Navigate to project folder
 cd customer-segmentation-app
